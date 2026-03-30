@@ -1,0 +1,6 @@
+{
+  "/apple-icon/route": "app/apple-icon/route.js",
+  "/icon/route": "app/icon/route.js",
+  "/page": "app/page.js",
+  "/workout/page": "app/workout/page.js"
+}
