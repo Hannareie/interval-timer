@@ -141,7 +141,7 @@ export default function HomePage() {
   const totalDurationMs = getTotalDurationMs(config);
 
   return (
-    <main className="relative min-h-screen bg-[#102833] text-white">
+    <main className="relative flex h-dvh flex-col overflow-hidden bg-[#102833] text-white">
       <EditorSheet
         open={editorKey}
         config={config}
@@ -149,8 +149,8 @@ export default function HomePage() {
         onUpdate={updateConfig}
       />
 
-      <section className="relative z-0 overflow-hidden bg-[linear-gradient(180deg,#86ead4_0%,#38d4c3_42%,#2c97f2_100%)] px-6 pb-24 pt-1">
-        <div className="mt-10 font-bold text-center">
+      <section className="relative z-0 shrink-0 overflow-hidden bg-[linear-gradient(180deg,#86ead4_0%,#38d4c3_42%,#2c97f2_100%)] px-6 pb-24 pt-1">
+        <div className="mt-16 font-bold text-center">
           <h1 className="text-2xl text-[#0a3340]">Intervals</h1>
         </div>
 
@@ -161,7 +161,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="absolute inset-x-0 top-[210px] z-20 flex justify-center">
+      <div className="absolute inset-x-0 top-[232px] z-20 flex justify-center">
         <FloatingPlayButton
           large
           onClick={() => {
@@ -171,15 +171,15 @@ export default function HomePage() {
         />
       </div>
 
-      <section className="relative z-10 -mt-6 bg-transparent px-0 pb-2 pt-0">
+      <section className="relative z-10 -mt-6 flex min-h-0 flex-1 bg-transparent px-0 pb-0 pt-0">
         <div className="pointer-events-none absolute inset-x-0 top-0 z-10 flex -translate-y-[52px] items-end justify-center">
           <div className="flex-1 rounded-tr-[22px] bg-[#262626]" />
           <div className="h-[104px] w-[120px] rounded-t-[999px] bg-[#262626]" />
           <div className="flex-1 rounded-tl-[22px] bg-[#262626]" />
         </div>
 
-        <div className="relative z-20 rounded-t-[20px] bg-[#262626] px-4 pb-2 pt-20">
-          <div className="mb-4 space-y-3">
+        <div className="relative z-20 flex min-h-0 flex-1 flex-col rounded-t-[20px] bg-[#262626] px-4 pb-4 pt-20">
+          <div className="space-y-3">
             <ConfigCard
               icon={Waves}
               label="Warmup duration"
