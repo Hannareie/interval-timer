@@ -1,6 +1,8 @@
 {
+  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js",
   "/apple-icon/route": "app/apple-icon/route.js",
   "/icon/route": "app/icon/route.js",
-  "/page": "app/page.js",
-  "/workout/page": "app/workout/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/workout/page": "app/workout/page.js",
+  "/page": "app/page.js"
 }

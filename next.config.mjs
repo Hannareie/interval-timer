@@ -1,5 +1,9 @@
 import withPWAInit from "next-pwa";
 
+const repoName = "interval-timer";
+const isProduction = process.env.NODE_ENV === "production";
+const basePath = isProduction ? `/${repoName}` : "";
+
 const withPWA = withPWAInit({
   dest: "public",
   disable: process.env.NODE_ENV === "development",
@@ -11,6 +15,10 @@ const withPWA = withPWAInit({
 const nextConfig = {
   reactStrictMode: true,
   typedRoutes: true,
+  output: "export",
+  trailingSlash: true,
+  basePath,
+  assetPrefix: basePath,
   outputFileTracingRoot: process.cwd()
 };
 

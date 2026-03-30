@@ -22,6 +22,7 @@ Update it whenever scripts, linting, testing, or architectural conventions chang
 - Install dependencies with `npm install`.
 - Development server: `npm run dev`
 - Production build: `npm run build`
+  This exports a static site to `out/` via Next.js `output: "export"`.
 - Start production server: `npm run start`
 - Type-check only: `npm run typecheck`
 
@@ -46,6 +47,8 @@ Update it whenever scripts, linting, testing, or architectural conventions chang
 
 - Bootstrap with `npm install`.
 - The generated PWA assets are produced by Next.js metadata routes and `next-pwa` during build.
+- GitHub Pages deployment is configured via `.github/workflows/deploy-pages.yml`.
+- Production deploys are configured for the project-site path `/interval-timer`.
 
 ## Agent Workflow
 
@@ -63,6 +66,7 @@ Update it whenever scripts, linting, testing, or architectural conventions chang
 - Tool-specific config files are the source of truth for code style and test behavior.
 - `tailwind.config.ts` is the source of truth for theme tokens and design primitives.
 - `app/manifest.ts`, `app/icon.tsx`, `app/apple-icon.tsx`, and `next.config.mjs` are the source of truth for PWA behavior.
+- `next.config.mjs`, `app/layout.tsx`, and `app/manifest.ts` are also the source of truth for GitHub Pages base-path behavior.
 - Repository-local instructions override generic agent preferences.
 - If Cursor or Copilot instruction files are added later, summarize their requirements here.
 

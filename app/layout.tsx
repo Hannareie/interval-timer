@@ -1,16 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const basePath = process.env.NODE_ENV === "production" ? "/interval-timer" : "";
 
 export const metadata: Metadata = {
   applicationName: "Interval Timer",
   title: "Interval Timer",
   description: "Premium mobile-first interval timer for running training.",
-  manifest: "/manifest.webmanifest",
+  manifest: `${basePath}/manifest.webmanifest`,
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
@@ -20,8 +19,8 @@ export const metadata: Metadata = {
     telephone: false
   },
   icons: {
-    apple: [{ url: "/apple-icon" }],
-    icon: [{ url: "/icon" }]
+    apple: [{ url: `${basePath}/apple-icon` }],
+    icon: [{ url: `${basePath}/icon` }]
   }
 };
 
@@ -41,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,30 +1,57 @@
 {
   "pages": {
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-7d9d0b4c292b4476.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-08b8165d408de92e.js",
+      "static/chunks/main-app-f61c90ee2732ce9e.js",
+      "static/chunks/app/_not-found/page-4b883ea9124ebfd2.js"
     ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/manifest.webmanifest/route": [
+      "static/chunks/webpack-7d9d0b4c292b4476.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-08b8165d408de92e.js",
+      "static/chunks/main-app-f61c90ee2732ce9e.js",
+      "static/chunks/app/manifest.webmanifest/route-854bcacde56c8f84.js"
     ],
     "/apple-icon/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/apple-icon/route.js"
+      "static/chunks/webpack-7d9d0b4c292b4476.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-08b8165d408de92e.js",
+      "static/chunks/main-app-f61c90ee2732ce9e.js",
+      "static/chunks/app/apple-icon/route-854bcacde56c8f84.js"
     ],
     "/icon/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/icon/route.js"
+      "static/chunks/webpack-7d9d0b4c292b4476.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-08b8165d408de92e.js",
+      "static/chunks/main-app-f61c90ee2732ce9e.js",
+      "static/chunks/app/icon/route-854bcacde56c8f84.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-7d9d0b4c292b4476.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-08b8165d408de92e.js",
+      "static/chunks/main-app-f61c90ee2732ce9e.js",
+      "static/css/3e79a13c93dec1bc.css",
+      "static/chunks/app/layout-0b57ba1fb43baa34.js"
     ],
     "/workout/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/workout/page.js"
+      "static/chunks/webpack-7d9d0b4c292b4476.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-08b8165d408de92e.js",
+      "static/chunks/main-app-f61c90ee2732ce9e.js",
+      "static/chunks/437-a6ee3e1811a957a6.js",
+      "static/chunks/645-ca9f530ad87108f2.js",
+      "static/chunks/app/workout/page-f4cae2c259b85baf.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-7d9d0b4c292b4476.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-08b8165d408de92e.js",
+      "static/chunks/main-app-f61c90ee2732ce9e.js",
+      "static/chunks/437-a6ee3e1811a957a6.js",
+      "static/chunks/app/page-c9bd81c94236b0a8.js"
     ]
   }
 }
