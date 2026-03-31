@@ -12,7 +12,7 @@ const compat = new FlatCompat({
 
 const config = [
   {
-    ignores: [".next/**", "node_modules/**", "public/sw.js", "public/workbox-*.js"]
+    ignores: [".next/**", "node_modules/**"]
   },
   ...compat.config({ extends: ["next/core-web-vitals"] })
 ];

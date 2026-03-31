@@ -3,7 +3,7 @@
 ## Repository Status
 
 - Repository root: `/Users/hanna/Documents/code/interval-timer`
-- Primary stack: Next.js App Router, React, TypeScript, Tailwind CSS, Zustand, Framer Motion, `next-pwa`.
+- Primary stack: Next.js App Router, React, TypeScript, Tailwind CSS, Zustand, Framer Motion.
 - Current app entry points: `app/page.tsx` and `app/workout/page.tsx`.
 - Core timer logic lives in `lib/timerEngine.ts` and `store/useWorkoutStore.ts`.
 - Local persistence uses Zustand `persist` middleware with `localStorage`.
@@ -46,7 +46,7 @@ Update it whenever scripts, linting, testing, or architectural conventions chang
 ### Install / Bootstrap
 
 - Bootstrap with `npm install`.
-- The generated PWA assets are produced by Next.js metadata routes and `next-pwa` during build.
+- The generated app metadata assets are produced by Next.js metadata routes during build.
 - GitHub Pages deployment is configured via `.github/workflows/deploy-pages.yml`.
 - Production deploys are configured for the project-site path `/interval-timer`.
 
