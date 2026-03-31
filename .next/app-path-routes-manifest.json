@@ -1,8 +1,0 @@
-{
-  "/manifest.webmanifest/route": "/manifest.webmanifest",
-  "/apple-icon/route": "/apple-icon",
-  "/icon/route": "/icon",
-  "/_not-found/page": "/_not-found",
-  "/workout/page": "/workout",
-  "/page": "/"
-}
