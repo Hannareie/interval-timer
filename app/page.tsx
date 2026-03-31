@@ -65,7 +65,7 @@ function EditorSheet({
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 40, opacity: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          className="safe-bottom w-full rounded-[32px] border border-white/10 bg-ocean-panel p-6 shadow-card"
+          className="safe-bottom w-full rounded-[32px] border border-white/10 bg-[#262626] p-6 shadow-card"
           onClick={(event) => event.stopPropagation()}
         >
           <p className="text-xs font-bold uppercase tracking-[0.35em] text-white/40">
@@ -141,7 +141,7 @@ export default function HomePage() {
   const totalDurationMs = getTotalDurationMs(config);
 
   return (
-    <main className="relative flex h-dvh flex-col overflow-hidden bg-[#102833] text-white">
+    <main className="relative flex h-dvh flex-col overflow-hidden bg-[#262626] text-white">
       <EditorSheet
         open={editorKey}
         config={config}
